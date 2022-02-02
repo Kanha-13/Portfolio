@@ -3,6 +3,8 @@ const Header = ({ onClick }) => {
   return (
     <div id="header">
       <div id="routes">
+        <button id='routes-opener' className='route'>=</button>
+        <hr />
         <button onClick={() => onClick(1)} className='route'>About </button>
         <hr />
         <button onClick={() => onClick(2)} className='route'>Works </button>

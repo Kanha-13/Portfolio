@@ -1,11 +1,9 @@
 #header{
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   height: 100vh;
   align-items: center;
-  justify-content:center;
   padding: 0px 10px 0px 10px;
-  position: fixed;
   width: 4vw;
 }
 #header h1{
@@ -16,7 +14,7 @@
   display: flex;
   align-items: center;
   flex-direction: column;
-  justify-content: center;
+  /* justify-content: center; */
   height: 100%;
 }
 hr{
@@ -43,5 +41,8 @@ hr{
   background-color: red;
 }
 .route:nth-child(7){
+  background-color: red;
+}
+.route:nth-child(9){
   background-color: red;
 }
