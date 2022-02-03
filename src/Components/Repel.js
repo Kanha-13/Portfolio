@@ -2,19 +2,20 @@ import { useEffect, useRef, useState } from 'react';
 import '../Css/repel.css'
 import '../Css/gradient-bg.css'
 
-const Repel = () => {
+const Repel = ({ onClick }) => {
   const [startRepel, setStartRepel] = useState(false)
   const [hideDiv, setHideDiv] = useState(false)
   const [opacity, setOpacity] = useState(1)
   const repel = () => {
-    setStartRepel(true)
-    setOpacity(0)
+    onClick();
+    setStartRepel(true);
+    setOpacity(0);
     setTimeout(() => {
-      setHideDiv(true)
+      setHideDiv(true);
     }, 5000);
   }
   return (
-    <div style={{ opacity: opacity, display: hideDiv ? "none" : "flex  " }} className='container'>
+    <div style={{ opacity: opacity, display: hideDiv ? "none" : "flex", position: "absolute", zIndex: 1 }} className='container'>
       <h1 style={{ opacity: opacity }} onClick={repel} className='hello'>hello world</h1>
       {
         startRepel &&

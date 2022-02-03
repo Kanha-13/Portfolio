@@ -1,6 +1,6 @@
 .main-container{
-  display: flex;
   justify-content: left;
   flex-direction: row-reverse;
   padding: 0px 10px 0px 10px;
+  transition: opacity 10s;
 }
