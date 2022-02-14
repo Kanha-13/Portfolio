@@ -4,14 +4,14 @@ import MainContent from './Components/MainContent';
 import { useState } from 'react';
 
 const App = () => {
-  const [showMap, setShowMap] = useState(0)
+  const [show, setShow] = useState(0)
   const onClick = () => {
-    setShowMap(1)
+    setShow(1)
   }
   return (
     <>
       <Repel onClick={onClick} />
-      <MainContent isShow={showMap} />
+      <MainContent isShow={show} />
     </>
   );
 }
