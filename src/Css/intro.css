@@ -1,0 +1,42 @@
+#intro-container{
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  height: 100%;
+  width: 100%;
+}
+#intro-left{
+  display: flex;
+  background-color: gray;
+  width: 50%;
+  height: 100vh;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 25px;
+}
+#intro-right{
+  width: 50%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#intro-name{
+  font-size: 115px;
+  display: block;
+  width: 100%;
+  text-align: center;
+}
+@media only screen and (max-width: 800px) {
+  #intro-name{
+    font-size: 85px;
+  }
+  #intro-container{
+    flex-direction: column;
+  }
+  #intro-left,#intro-right{
+    width: 100%;
+  }
+}

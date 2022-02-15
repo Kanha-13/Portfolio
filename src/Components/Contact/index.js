@@ -1,9 +1,21 @@
+import linkedinLogo from '../../Assets/images/linkedin.png'
+import twitterLogo from '../../Assets/images/twitter.png'
+import emailLogo from '../../Assets/images/email_logo.png'
+import githubLogo from '../../Assets/images/github.jpg'
+import '../../Css/contact.css'
+import MailForm from './MailForm'
 const Contact = () => {
   return (
-    <div id="wrapper-mainDetails" style={{ display: "flex", width: "100%", alignItems: "center", flexDirection: "column", height: "100%", width: "100%", overflow: "auto" }}>
-      <div id='main-intro' style={{ height: "100%", display: "flex", flexDirection: "row", overflowX: "hidden", padding: "1px 2px 1px 2px", justifyContent: "space-evenly", width: "100%" }}>
-        <p style={{ height: "10%", lineHeight: "1px", width: "55%", margin: "0px", padding: "0px", fontSize: "1px" }}>Hey 👋, My name is <span> Kanha Agrawal</span>, and I'm Full Stack web and React-Native developer from India❤️ </p>
+    <div id="contact-container">
+      <h1 className="container-title">Contact 📬</h1>
+      <hr className='hr container-title-underline' />
+      <div id='contact-logo-div' >
+        <a className='contact-logo' href="https://twitter.com/kanha_13" style={{ decoration: "none" }}> <img width={50} className='' src={twitterLogo} /></a>
+        <a className='contact-logo' href="https://www.linkedin.com/in/kanha-13/"> <img width={55} className='' src={linkedinLogo} /></a>
+        <a className='contact-logo' href="https://github.com/Kanha-13"><img width={40} src={githubLogo} /></a>
+        <button className='contact-logo'><img width={45} src={emailLogo} alt="" /></button>
       </div>
+      <MailForm />
     </div>
   );
 }

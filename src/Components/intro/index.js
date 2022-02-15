@@ -1,12 +1,10 @@
 import Left from './Left';
 import Right from './Right';
+import '../../Css/intro.css'
 
 const Intro = ({ ref }) => {
   return (
-    <div style={{
-      display: "flex", alignItems: "center",
-      flexDirection: "row", height: "100%", width: "100%"
-    }}>
+    <div id='intro-container'>
       <Left />
       <Right />
     </div>
