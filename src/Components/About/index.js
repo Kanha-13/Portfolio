@@ -1,7 +1,8 @@
-const About = () => {
+import '../../Css/about.css'
+const About = ({ Ref }) => {
   return (
-    <div>
-      <h1>About</h1>
+    <div ref={Ref} id="about-container">
+      <h1 style={{ color: "#ffffff" }}>About</h1>
     </div>
   );
 }

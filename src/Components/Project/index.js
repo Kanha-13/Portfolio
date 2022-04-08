@@ -1,7 +1,7 @@
-const Projects = () => {
+const Projects = ({ Ref }) => {
   return (
-    <div>
-      <h1>Projects</h1>
+    <div ref={Ref}>
+      <h1 style={{ color: "#ffffff" }}>Projects</h1>
     </div>
   );
 }

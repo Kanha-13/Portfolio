@@ -1,7 +1,33 @@
-#footer-container{
+#footer-container {
   color: #FFFFFF;
 }
-#footer-container p{
+
+#footer-container p {
   text-align: center;
   font-size: large;
+}
+
+@-webkit-keyframes rotating {
+  from {
+    -webkit-transform: rotate(0deg);
+  }
+
+  to {
+    -webkit-transform: rotate(360deg);
+  }
+}
+
+@keyframes rotating {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+#react-logo:hover {
+  -webkit-animation: rotating 2s linear infinite;
+  animation: rotating 2s linear infinite;
 }

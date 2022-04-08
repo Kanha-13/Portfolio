@@ -29,7 +29,30 @@
   width: 100%;
   text-align: center;
 }
+.into-image-div{
+  width: 60%;
+  border-radius: 10%;
+  overflow: hidden;
+  align-self: center;
+}
 @media only screen and (max-width: 800px) {
+  #intro-right{
+    position: absolute;
+    z-index: 0;
+  }
+  .into-image-div{
+    height: 80%;
+    margin-top: 15%;
+    width: 100%;
+    border-radius: 10px;
+  }
+  #intro-left{
+    z-index: 2;
+    background-color: #8080809c;
+  }
+  #intro-left:hover{
+    z-index: 0;
+  }
   #intro-name{
     font-size: 85px;
   }

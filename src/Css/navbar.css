@@ -1,0 +1,22 @@
+.nav-links{
+  font-size: 23px;
+  color: white;
+  margin: 20px 50px 50px;
+  cursor: pointer;
+}
+.nav-container{
+  backdrop-filter: blur(10px);
+  position: fixed;
+  display: flex;
+  z-index: 100;
+  background-color: #101010c4;
+  flex-direction: row;
+  width: 100%;
+  height: 7%;
+  justify-content: flex-end;
+}
+@media only screen and (max-width: 800px) {
+  .nav-container{
+    display: none;
+  }
+}
