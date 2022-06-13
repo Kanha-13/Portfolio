@@ -11,7 +11,7 @@ const Skills = ({ Ref }) => {
         <h1 className="container-title">Skills 🖌️ </h1>
         <hr className='hr container-title-underline' />
       </div>
-      <div style={{ display: "flex", justifyContent: "space-evenly", alignItems: "center", flexWrap: 'wrap' }}>
+      <div style={{ marginTop: "10vh", display: "flex", justifyContent: "space-evenly", alignItems: "center", flexWrap: 'wrap' }}>
         <img src={reactlogo} style={{ width: "25vw", height: "25vh" }} />
         <img src={nodelogo} style={{ width: "25vw", height: "25vh" }} />
         <img src={mongologo} style={{ width: "25vw", height: "25vh" }} />

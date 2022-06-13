@@ -8,6 +8,7 @@ import Skills from "../Skill";
 import About from "../About";
 import Footer from "../Footer";
 import NavBar from "../NavBar";
+import Achievemnets from "../Achievements";
 const MainContent = ({ isShow }) => {
   useEffect(() => {
     isShow ?
@@ -18,6 +19,7 @@ const MainContent = ({ isShow }) => {
   const intro = useRef()
   const about = useRef()
   const experience = useRef()
+  const achievements = useRef()
   const projects = useRef()
   const skills = useRef()
   const contact = useRef()
@@ -34,9 +36,12 @@ const MainContent = ({ isShow }) => {
         scrollToRef(experience)
         break;
       case 3:
-        scrollToRef(projects)
+        scrollToRef(achievements)
         break;
       case 4:
+        scrollToRef(projects)
+        break;
+      case 5:
         scrollToRef(skills)
         break;
       default:
@@ -50,6 +55,7 @@ const MainContent = ({ isShow }) => {
       <Intro Ref={intro} />
       <About Ref={about} />
       <Experience Ref={experience} />
+      <Achievemnets Ref={achievements} />
       <Projects Ref={projects} />
       <Skills Ref={skills} />
       <Contact Ref={contact} />

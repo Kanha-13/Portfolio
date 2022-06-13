@@ -16,7 +16,7 @@ const Repel = ({ onClick }) => {
   }
   return (
     <div style={{ opacity: opacity, display: hideDiv ? "none" : "flex", position: "absolute", zIndex: 1 }} className='container'>
-      <h1 style={{ opacity: opacity }} onClick={repel} className='hello'>hello world</h1>
+      <h1 style={{ opacity: opacity }} onClick={repel} className='hello'>hello world  </h1>
       {
         startRepel &&
         <>

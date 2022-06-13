@@ -6,6 +6,7 @@
 
 #exp-cards-container {
   display: flex;
+  margin-top: 10%;
   align-items: center;
   justify-content: space-evenly;
   flex-direction: row;
@@ -13,7 +14,7 @@
 }
 
 #exp-card {
-  background-color: rgb(19, 172, 172);
+  background-color: gray;
   height: 50vh;
   width: 20vw;
   border-radius: 5px;
@@ -25,7 +26,7 @@
 }
 
 #exp-card-detail {
-  background-color: rgb(159, 247, 247);
+  background-color: white;
   height: 50vh;
   width: 20vw;
   border-radius: 5px;
