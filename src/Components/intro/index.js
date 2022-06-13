@@ -2,9 +2,9 @@ import Left from './Left';
 import Right from './Right';
 import '../../Css/intro.css'
 
-const Intro = ({ ref }) => {
+const Intro = ({ Ref }) => {
   return (
-    <div id='intro-container'>
+    <div ref={Ref} id='intro-container'>
       <Left />
       <Right />
     </div>

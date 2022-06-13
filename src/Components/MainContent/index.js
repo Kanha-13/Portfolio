@@ -15,6 +15,7 @@ const MainContent = ({ isShow }) => {
       document.getElementById("main-container").style.display = "none"
   }, [isShow])
 
+  const intro = useRef()
   const about = useRef()
   const experience = useRef()
   const projects = useRef()
@@ -23,6 +24,9 @@ const MainContent = ({ isShow }) => {
   const scrollToRef = (ref) => window.scroll({ behavior: "smooth", top: ref.current.offsetTop })
   const executeScroll = (number) => {
     switch (number) {
+      case 0:
+        scrollToRef(intro)
+        break;
       case 1:
         scrollToRef(about)
         break;
@@ -43,7 +47,7 @@ const MainContent = ({ isShow }) => {
   return (
     <div id="main-container" >
       <NavBar scrollTo={executeScroll} />
-      <Intro />
+      <Intro Ref={intro} />
       <About Ref={about} />
       <Experience Ref={experience} />
       <Projects Ref={projects} />

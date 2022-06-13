@@ -16,8 +16,10 @@ const Contact = ({ Ref }) => {
   }
   return (
     <div id="contact-container" ref={Ref}>
-      <h1 className="container-title">Contact 📬</h1>
-      <hr className='hr container-title-underline' />
+      <div className='sub-title-wrapper'>
+        <h1 className="container-title">Contact 📬</h1>
+        <hr className='hr container-title-underline' />
+      </div>
       <div id='contact-logo-div' >
         <a className='contact-logo enlarge-hover' href="https://twitter.com/kanha_13" style={{ decoration: "none" }}> <img width={50} className='' src={twitterLogo} /></a>
         <a className='contact-logo enlarge-hover' href="https://www.linkedin.com/in/kanha-13/"> <img width={55} className='' src={linkedinLogo} /></a>

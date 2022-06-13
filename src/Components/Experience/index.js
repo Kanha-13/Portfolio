@@ -1,7 +1,17 @@
+import ExpCard from "./Card";
+import { experiences } from "./constants";
 const Experience = ({ Ref }) => {
   return (
-    <div ref={Ref} style={{ width: "100%", height: "100vh", paddingTop: "8vh" }}>
-      <h2 style={{ color: "white", fontSize: "35px" }}>Experience</h2>
+    <div id="exp-wrapper-container" ref={Ref}>
+      <div className='sub-title-wrapper'>
+        <h1 className="container-title">Experience🛄 </h1>
+        <hr className='hr container-title-underline' />
+      </div>
+      <div id="exp-cards-container" >
+        {
+          experiences.map(exp => <ExpCard details={exp} />)
+        }
+      </div>
       {/* <hr style={{ width: "20%" }} /> */}
     </div>
   );

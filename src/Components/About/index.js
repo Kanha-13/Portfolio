@@ -2,7 +2,10 @@ import '../../Css/about.css'
 const About = ({ Ref }) => {
   return (
     <div ref={Ref} id="about-container">
-      <h1 style={{ color: "#ffffff" }}>About</h1>
+      <div className='sub-title-wrapper'>
+        <h1 className="container-title">About 👦 </h1>
+        <hr className='hr container-title-underline' />
+      </div>
     </div>
   );
 }
