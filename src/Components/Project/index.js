@@ -10,7 +10,7 @@ const Projects = ({ Ref }) => {
       </div>
       <div id="projects-card-container">
         {
-          projects.map(project => <ProjectCard />)
+          projects.map(project => <ProjectCard details={project} />)
         }
       </div>
     </div>
