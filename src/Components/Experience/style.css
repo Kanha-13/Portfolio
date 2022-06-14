@@ -1,12 +1,12 @@
 #exp-wrapper-container {
   width: 100%;
-  height: 100vh;
+  /* height: 100vh; */
   padding-top: 8vh;
 }
 
 #exp-cards-container {
   display: flex;
-  margin-top: 10%;
+  margin: 10% 0%;
   align-items: center;
   justify-content: space-evenly;
   flex-direction: row;
@@ -15,7 +15,7 @@
 
 #exp-card {
   background-color: gray;
-  height: 50vh;
+  height: 40vh;
   width: 20vw;
   border-radius: 5px;
   display: flex;
@@ -27,7 +27,7 @@
 
 #exp-card-detail {
   background-color: white;
-  height: 50vh;
+  height: 40vh;
   width: 20vw;
   border-radius: 5px;
   display: flex;
@@ -60,15 +60,15 @@
 }
 
 .exp-label {
-  font-size: 20px;
+  font-size: 18px;
   font-weight: bold;
-  margin: 5px;
+  margin: 3px;
 }
 
 .exp-ans {
-  font-size: 20px;
+  font-size: 18px;
   text-align: center;
-  margin: 5px;
+  margin: 3px;
 }
 
 @media only screen and (max-width:900px) {

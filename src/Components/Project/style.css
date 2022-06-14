@@ -1,3 +1,12 @@
 #project-container-wrapper {
   padding-top: 8vh;
 }
+
+#projects-card-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  margin: 10% 0%;
+  flex-wrap: wrap;
+}
