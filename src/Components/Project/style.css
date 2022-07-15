@@ -10,3 +10,34 @@
   margin: 10% 0%;
   flex-wrap: wrap;
 }
+
+.project-card {
+  cursor: pointer;
+  border: 3px solid gray;
+  background-color: #ffffff;
+  border-radius: 10px;
+  overflow: hidden;
+  height: 30vh;
+  width: 20vw;
+}
+
+.project-card img {
+  z-index: 1;
+  width: 20vw;
+  border-radius: 10px;
+  height: 30vh;
+  background-size: cover;
+  position: absolute;
+}
+
+@media only screen and (max-width:900px) {
+  .project-card {
+    width: 80vw;
+    margin-bottom: 10px;
+  }
+
+  .project-card img {
+    width: 80vw;
+  }
+
+}
