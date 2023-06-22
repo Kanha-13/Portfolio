@@ -2,12 +2,10 @@ import { useNavigate } from 'react-router-dom';
 import { ROUTES } from '../../../Constants/routes';
 import Button from '../Button/Button';
 import './body.css'
-import { zoomoutbg } from '../../../utils/zoom';
 
 const Body = () => {
   const navigate = useNavigate();
   const onSwitch = (route) => {
-    zoomoutbg()
     navigate(route)
   }
   return (

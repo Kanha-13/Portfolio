@@ -1,29 +1,15 @@
-#about-container {
-  width: 100%;
-  height: 100vh;
-  display: flex;
+.about-container {
   align-items: center;
   flex-direction: column;
-  overflow-y: auto;
 }
 
-#about-content-container {
-  margin-top: 6.5vh;
-  margin-bottom: 6.5vh;
-  opacity: 0;
-  display: flex;
-  position: relative;
+.about-content {
   flex-direction: column;
-  box-sizing: border-box;
-  padding: 2.5rem;
   width: 40rem;
-  min-height: auto;
   justify-content: center;
-  border-radius: 0.3vw;
-  background-color: #20272aec;
 }
 
-#about-content-container h2 {
+.about-content h2 {
   font-size: 1.3rem;
   line-height: 1.4;
   letter-spacing: 0.5rem;
@@ -33,27 +19,6 @@
   margin: 2rem 0 2rem 0;
   color: #ffffff;
   font-weight: 600;
-}
-
-#about-content-container button {
-  height: 5vh;
-  width: 5vh;
-  margin: 5px;
-  position: absolute;
-  top: 0;
-  right: 0;
-  border: none;
-  background-color: transparent;
-  color: #ffffff;
-  font-size: 1.3rem;
-  align-self: flex-end;
-  border-radius: 50%;
-  cursor: pointer;
-  transition: background-color 0.15s ease-in-out;
-}
-
-#about-content-container button:hover {
-  background-color: #4c4c4c5d;
 }
 
 #my-img-container {
@@ -69,18 +34,18 @@
   border-radius: 50%;
 }
 
-#about-content-container p {
+.about-content p {
   background-color: #1d2326;
   margin-top: 3rem;
   opacity: 0.75;
   line-height: 1.8rem;
 }
 
-#about-content-container p p {
+.about-content p p {
   display: inline;
 }
 
-#about-content-container p span {
+.about-content p span {
   color: rgb(236, 29, 29);
 
 }

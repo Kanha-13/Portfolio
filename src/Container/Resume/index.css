@@ -1,0 +1,37 @@
+.resume-container {
+  align-items: center;
+  flex-direction: column;
+}
+
+.resume-content {
+  width: 80rem;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.resume-content h2 {
+  font-size: 1.3rem;
+  line-height: 1.4;
+  letter-spacing: 0.5rem;
+  border-bottom: 1px solid #ffffff;
+  width: max-content;
+  padding-bottom: 0.5rem;
+  margin: 2rem 0 2rem 0;
+  color: #ffffff;
+  font-weight: 600;
+}
+
+.resume-div-l1{
+  display: flex;
+  width: 30%;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+.resume-div-l2{
+  width: 100%;
+}
+
+.resume-content p{
+  letter-spacing: 0.1rem;
+}

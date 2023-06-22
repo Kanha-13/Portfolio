@@ -14,7 +14,7 @@ export const zoomoutbg = () => {
   setTimeout(() => {
     body.style.position = 'absolute'
     body.style.zIndex=-1
-  }, 700);
+  }, 400);
 }
 
 export const zoominbg = () => {

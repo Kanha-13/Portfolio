@@ -1,5 +1,5 @@
 import { useNavigate } from "react-router-dom";
-import { suddenZoomout, zoominbg } from "../../utils/zoom";
+import { zoominbg, zoomoutbg } from "../../utils/zoom";
 import { ROUTES } from "../../Constants/routes";
 import { useEffect } from "react";
 
@@ -14,14 +14,8 @@ const About = () => {
   const navigate = useNavigate()
 
   const toHome = (event) => {
-    event.stopPropagation()
     zoominbg()
-    const container = document.getElementById("about-content-container")
-    container.style.transition = 'opacity 0.3s ease-in-out'
-    container.style.opacity = 0
-    setTimeout(() => {
-      navigate(ROUTES.HOME, { state: { isBack: true } })
-    }, 300)
+    navigate(ROUTES.HOME, { state: { isBack: true } })
   }
 
   const clickOnChild = (event) => {
@@ -29,16 +23,16 @@ const About = () => {
   }
 
   useEffect(() => {
-    suddenZoomout()
-    const container = document.getElementById("about-content-container")
-    container.style.transition = 'opacity 0.6s ease-in-out'
+    zoomoutbg()
+    const container = document.getElementById("app-screens-content-container")
+    container.style.transition = 'opacity 0.4s ease-in-out'
     container.style.opacity = 1
   }, [])
 
   return (
-    <div id="about-container" onClick={toHome}>
-      <div id="about-content-container" onClick={clickOnChild}>
-        <button onClick={toHome}>X</button>
+    <div id="app-screens-containers" className="about-container" onClick={toHome}>
+      <div id="app-screens-content-container" className="about-content" onClick={clickOnChild}>
+        <button id="app-screen-close-btn" onClick={toHome}>X</button>
         <h2>ABOUT</h2>
         <div id="my-img-container">
           <img src={MyImg} />
@@ -54,7 +48,7 @@ const About = () => {
         </p>
         <div id="contact-routes">
           <a href="https://github.com/Kanha-13"><img src={GitHub} /></a>
-          <a href="https://linkedin.com/in/kanha-13/"><img style={{height:"3.5vh"}} src={LinkedIn} /></a>
+          <a href="https://linkedin.com/in/kanha-13/"><img style={{ height: "3.5vh" }} src={LinkedIn} /></a>
           <a href="https://twitter.com/kanha_13"><img src={Twitter} /></a>
         </div>
       </div>
