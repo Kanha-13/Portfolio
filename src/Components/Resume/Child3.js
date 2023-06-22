@@ -2,10 +2,7 @@ import cricket from "../../Assets/images/cricket.png"
 import swimming from "../../Assets/images/swimming.png"
 import travell from "../../Assets/images/travell.png"
 import gaming from "../../Assets/images/game.png"
-
-import Twitter from "../../Assets/images/twitter.png"
-import GitHub from "../../Assets/images/github.png"
-import LinkedIn from "../../Assets/images/linkedin.png"
+import Contact from "../Contacts/Contact"
 
 const Child3 = () => {
   return (
@@ -49,11 +46,7 @@ const Child3 = () => {
       </div>
       <div className="resume-div-l2">
         <h2 >CONTACTS</h2>
-        <div id="contact-routes">
-          <a href="https://github.com/Kanha-13"><img src={GitHub} /></a>
-          <a href="https://linkedin.com/in/kanha-13/"><img style={{ height: "3.5vh" }} src={LinkedIn} /></a>
-          <a href="https://twitter.com/kanha_13"><img src={Twitter} /></a>
-        </div>
+        <Contact />
       </div>
     </div>
   );

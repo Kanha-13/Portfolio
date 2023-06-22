@@ -12,11 +12,13 @@ import Home from "./Container/Home"
 import Resume from "./Container/Resume";
 
 import './app.css'
+import Projects from "./Container/Projects";
+import Contacts from "./Container/Contacts";
 
 const App = () => {
-  useEffect(()=>{
+  useEffect(() => {
     easeInBg()
-  },[])
+  }, [])
   return (
     <BrowserRouter>
       <div id="app-container">
@@ -28,6 +30,8 @@ const App = () => {
         <Route path={ROUTES.HOME} element={<></>} />
         <Route path={ROUTES.ABOUT} element={<About />} />
         <Route path={ROUTES.RESUME} element={<Resume />} />
+        <Route path={ROUTES.PROJECTS} element={<Projects />} />
+        <Route path={ROUTES.CONTACT} element={<Contacts />} />
       </Routes>
     </BrowserRouter>
   );

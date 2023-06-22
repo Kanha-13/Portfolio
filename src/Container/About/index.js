@@ -4,11 +4,9 @@ import { ROUTES } from "../../Constants/routes";
 import { useEffect } from "react";
 
 import MyImg from "../../Assets/images/me.jpeg"
-import Twitter from "../../Assets/images/twitter.png"
-import GitHub from "../../Assets/images/github.png"
-import LinkedIn from "../../Assets/images/linkedin.png"
 
 import './index.css'
+import Contact from "../../Components/Contacts/Contact";
 
 const About = () => {
   const navigate = useNavigate()
@@ -46,11 +44,7 @@ const About = () => {
           Additionally, I have a solid understanding of <span>Electron-JS and React Native.</span>
           Using this tech stack, I have developed some worthwhile projects.
         </p>
-        <div id="contact-routes">
-          <a href="https://github.com/Kanha-13"><img src={GitHub} /></a>
-          <a href="https://linkedin.com/in/kanha-13/"><img style={{ height: "3.5vh" }} src={LinkedIn} /></a>
-          <a href="https://twitter.com/kanha_13"><img src={Twitter} /></a>
-        </div>
+        <Contact />
       </div>
     </div>
   );
