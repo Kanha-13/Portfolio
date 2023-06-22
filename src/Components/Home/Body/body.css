@@ -1,0 +1,35 @@
+#home-body {
+  height: 85vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+#home-body h1 {
+  font-family: sans-serif;
+  font-size: 2.25rem;
+  line-height: 1.3;
+  letter-spacing: 0.5rem;
+  font-weight: 600;
+}
+
+#home-body P {
+  opacity: 0.85;
+  margin: 0 0 1.8rem 0;
+  text-align: center;
+  width: 30%;
+  letter-spacing: 0.2rem;
+  font-size: 0.8rem;
+  line-height: 2;
+}
+
+#routes-div{
+  font-family: sans-serif;
+  margin-top: 5vh;
+  border: 1px solid #ffffff;
+  border-radius: 0.3vw;
+  overflow: hidden;
+  display: flex;
+}

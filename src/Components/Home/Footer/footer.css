@@ -1,0 +1,14 @@
+#home-footer {
+  height: 15vh;
+  margin-bottom: 2vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#home-footer p {
+  letter-spacing: 0.2rem;
+  font-size: 0.6rem;
+  opacity: 0.75;
+  margin-bottom: 0;
+}

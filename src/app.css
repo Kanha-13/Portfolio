@@ -1,0 +1,31 @@
+body{
+  margin: 0px;
+  padding: 0px;
+  overflow: hidden;
+  color: #ffffff;
+  width: 100vw;
+  height: 100vh;
+  background-color: black;
+  font-family: sans-serif;
+}
+
+#app-container{
+  background-image: url(./Assets/images/homeBg.jpg);
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  z-index: -2;
+  opacity: 0;
+  background-size: 106%;
+  background-position: center center;
+}
+
+#app-filter{
+  backdrop-filter: blur(1px);
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  background-color: rgba(70, 89, 84, 0.303);
+  width: 100vw;
+  height: 100vh;
+}
