@@ -11,7 +11,7 @@ const Body = () => {
   return (
     <div id='home-body'>
       <h1>KANHA</h1>
-      <p>FULL STACK DEVELOPER<br /> | FRONTEND | BACKEND | DATABASE |<br />| HYBRID MOBILE APP | DESKTOP APP |</p>
+      <p>COMPUTER SCIENCE ENGINEER<br />FULL STACK | FRONTEND | BACKEND <br /> DATABASE | HYBRID MOBILE APP | DESKTOP APP </p>
       <hr width="35%" />
       <div id='routes-div'>
         <Button label="ABOUT" onclick={() => onSwitch(ROUTES.ABOUT)} />

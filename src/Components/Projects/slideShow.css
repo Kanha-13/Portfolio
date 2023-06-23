@@ -2,15 +2,15 @@
   width: 100%;
   height: 65vh;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   position: relative;
+  overflow: hidden;
 }
 
 .slide-btn {
   width: 7%;
-  top: 20%;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -21,6 +21,7 @@
   cursor: pointer;
   border-radius: 0.4vw;
   user-select: none;
+  transition: background-color 0.2s ease-in-out;
 }
 
 .slide-btn:hover {
@@ -36,33 +37,96 @@
 }
 
 #slide-img-container {
-  width: 100%;
-  border-radius: 0.4vw;
-  /* background-color: black; */
-  height: 80%;
+  width: 80%;
+  height: 65%;
   overflow: hidden;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
+  align-items: center;
+  padding: 0px 1%;
 }
 
-#prev-slide {
-  width: 20%;
-  opacity: 0.5;
-  /* transform: rotateX(15deg); */
-  height: 90%;
-  transition: opacity 0.4s ease-in-out;
-}
+#prev-slide,
 #next-slide {
-  width: 20%;
+  max-height: 35%;
   opacity: 0.5;
-  /* transform: rotateX(15deg); */
-  height: 90%;
-  transition: opacity 0.4s ease-in-out;
-
+  border-radius: 0.4vw;
+  margin: 0px 5%;
 }
+
 #current-slide {
-  /* width: 100%; */
-  height: 90%;
-  transition: opacity 0.4s ease-in-out;
-  
+  cursor: pointer;
+  height: 75%;
+  border-radius: 0.4vw;
+}
+
+#slide-dots{
+  display: flex;
+  position: absolute;
+  width: 60%;
+  align-items: center;
+  justify-content: center;
+  background-color: transparent;
+  height: 10%;
+  margin-top: 27%;
+}
+
+#slide-dots div{
+  height: 1vh;
+  width: 1vh;
+  margin: 0.5rem;
+  border-radius: 50%;
+}
+
+#code-detail {
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  letter-spacing: 0.1rem;
+  width: 100%;
+  height: 30%;
+}
+
+#code-detail h4 {
+  margin-bottom: 0px;
+}
+
+#code-detail-content {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 74%;
+} 
+
+#code-detail p {
+  opacity: 0.75;
+  width: 80%;
+  min-width: 80%;
+}
+
+#code-detail-btns {
+  width: 15%;
+  margin-left: 5%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+#code-detail button {
+  background-color: transparent;
+  margin-bottom: 2vh;
+  border: 1px solid #ffffff;
+  height: 5vh;
+  border-radius: 0.4vw;
+  color: #ffffff;
+  width: 100%;
+  cursor: pointer;
+  letter-spacing: 0.1rem;
+  transition: background-color 0.2s ease-in-out;
+  opacity: 0.75;
+}
+
+#code-detail button:hover {
+  background-color: #ffffff26;
 }

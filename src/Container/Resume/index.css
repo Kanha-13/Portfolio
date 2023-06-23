@@ -1,6 +1,7 @@
 .resume-container {
   align-items: center;
   flex-direction: column;
+  opacity: 0.85;
 }
 
 .resume-content {
@@ -32,6 +33,6 @@
   width: 100%;
 }
 
-.resume-content p{
+.resume-content p,.resume-content h4{
   letter-spacing: 0.1rem;
 }

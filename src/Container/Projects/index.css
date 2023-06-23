@@ -1,5 +1,6 @@
 .projects-container {
   align-items: center;
+  opacity: 0.85;
   flex-direction: column;
 }
 

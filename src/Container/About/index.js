@@ -37,7 +37,7 @@ const About = () => {
         </div>
         <p>
           Hello, my name is Kanha Agrawal.
-          I obtained my bachelor's degree in <span>Computer Science Engineering</span> from SSIPMT College, a branch of CSVTU University.
+          I obtained my bachelor's degree in <span>Computer Science Engineering</span> from SSIPMT College, a branch of CSVTU.
           I work as a <span>Full-Stack</span> web developer.
           I'm passionate about contributing to open source.
           I am well-versed in Node-Js and React.
