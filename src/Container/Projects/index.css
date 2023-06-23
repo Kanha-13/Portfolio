@@ -1,0 +1,23 @@
+.projects-container {
+  align-items: center;
+  opacity: 0.85;
+  flex-direction: column;
+}
+
+.projects-content {
+  flex-direction: column;
+  width: 80rem;
+  justify-content: center;
+}
+
+.projects-content h2 {
+  font-size: 1.3rem;
+  line-height: 1.4;
+  letter-spacing: 0.5rem;
+  border-bottom: 1px solid #ffffff;
+  width: max-content;
+  padding-bottom: 0.5rem;
+  margin: 2rem 0 2rem 0;
+  color: #ffffff;
+  font-weight: 600;
+}

@@ -1,0 +1,51 @@
+.about-container {
+  align-items: center;
+  flex-direction: column;
+}
+
+.about-content {
+  flex-direction: column;
+  width: 40rem;
+  justify-content: center;
+}
+
+.about-content h2 {
+  font-size: 1.3rem;
+  line-height: 1.4;
+  letter-spacing: 0.5rem;
+  border-bottom: 1px solid #ffffff;
+  width: max-content;
+  padding-bottom: 0.5rem;
+  margin: 2rem 0 2rem 0;
+  color: #ffffff;
+  font-weight: 600;
+}
+
+#my-img-container {
+  border-radius: 0.4vw;
+  background-color: #1d2326;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+#my-img-container img {
+  height: 18vh;
+  border-radius: 50%;
+}
+
+.about-content p {
+  background-color: #1d2326;
+  margin-top: 3rem;
+  opacity: 0.75;
+  line-height: 1.8rem;
+}
+
+.about-content p p {
+  display: inline;
+}
+
+.about-content p span {
+  color: rgb(236, 29, 29);
+
+}

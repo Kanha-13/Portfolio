@@ -1,0 +1,14 @@
+.home-route-btn {
+  display: block;
+  border-right: 1px solid #ffffff;
+  padding: 0.9rem 2.5rem;
+  letter-spacing: 0.2rem;
+  font-size: 0.8rem;
+  cursor: pointer;
+  opacity: 0.80;
+  transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out;
+}
+
+.home-route-btn:hover {
+  background-color: #ffffff26;
+}

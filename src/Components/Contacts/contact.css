@@ -1,0 +1,26 @@
+#contact-routes{
+  width: 50%;
+  display: flex;
+  align-self: center;
+  align-items: center;
+  justify-content: space-around;
+  margin-top: 2vh;
+}
+
+#contact-routes a {
+  height: 4.5vh;
+  width: 4.5vh;
+  border-radius: 50%;
+  background-color: #20272aec;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #ffffff;
+  overflow: hidden;
+}
+
+#contact-routes img {
+  /* border-radius: 50%; */
+  /* opacity: 0.85; */
+  height: 2.2vh;
+}
