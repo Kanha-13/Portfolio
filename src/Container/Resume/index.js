@@ -4,6 +4,7 @@ import { useNavigate } from "react-router-dom"
 import { ROUTES } from "../../Constants/routes"
 
 import './index.css'
+import './child.css'
 import Child1 from "../../Components/Resume/Child1"
 import Child2 from "../../Components/Resume/Child2"
 import Child3 from "../../Components/Resume/Child3"

@@ -4,27 +4,16 @@ import img2 from "../../Assets/images/flexbench.svg"
 import img3 from "../../Assets/images/pharmacy.png"
 import img4 from "../../Assets/images/employeemanage.png"
 import img5 from "../../Assets/images/chugli.png"
-import { useEffect, useState } from 'react'
+import { useState } from 'react'
 import { PROJECTS } from './constants'
 
 const SlideShow = () => {
   const [slides, setSlides] = useState([img1, img2, img3, img4, img5])
-  const [showCode, setShowCodeLink] = useState(false)
-
   const [prevSlide, setPrevSlide] = useState(0)
   const [currentSlide, setCurrentSlide] = useState(1)
   const [nextSlide, setNextSlide] = useState(2)
 
   const next = () => {
-    const nextS = document.getElementById('next-slide')
-    const currentS = document.getElementById('current-slide')
-    const prevS = document.getElementById('prev-slide')
-
-    // nextS.style.opacity = 0
-    // currentS.style.opacity = 0
-    // prevS.style.opacity = 0
-    // setTimeout(() => {
-
     if (currentSlide < slides.length - 1) {
       setPrevSlide(currentSlide)
       setCurrentSlide(prev => prev + 1)
@@ -37,25 +26,8 @@ const SlideShow = () => {
       setPrevSlide(slides.length - 1)
       setNextSlide(prev => prev + 1)
     }
-
-    //   nextS.style.opacity = 0.5
-    //   currentS.style.opacity = 1
-    //   prevS.style.opacity = 0.5
-    // }, 400)
-
   }
   const prev = () => {
-
-    const nextS = document.getElementById('next-slide')
-    const currentS = document.getElementById('current-slide')
-    const prevS = document.getElementById('prev-slide')
-
-    // nextS.style.opacity = 0
-    // currentS.style.opacity = 0
-    // prevS.style.opacity = 0
-    // setTimeout(() => {
-
-
     if (currentSlide > 0) {
       setNextSlide(currentSlide)
       setCurrentSlide(prev => prev - 1)
@@ -68,18 +40,7 @@ const SlideShow = () => {
       setPrevSlide(prev => prev - 1)
       setNextSlide(prev => prev - 1)
     }
-
-
-    //   nextS.style.opacity = 0.5
-    //   currentS.style.opacity = 1
-    //   prevS.style.opacity = 0.5
-    // }, 400)
   }
-
-  useEffect(() => {
-    console.log(prevSlide, currentSlide, nextSlide)
-  }, [currentSlide])
-
   return (
     <div id='slideshow-container'>
       <div id='slide-img-container'>
@@ -93,7 +54,7 @@ const SlideShow = () => {
             <></>
         }
         <div id='slide-dots'>
-          {slides.map((_,index)=><div style={{backgroundColor:index===currentSlide?"#ffffff":"#747474"}}></div>)}
+          {slides.map((_, index) => <div style={{ backgroundColor: index === currentSlide ? "#ffffff" : "#747474" }}></div>)}
         </div>
         <div onClick={prev} className='slide-btn slide-btn1'>&#10094;</div>
         <div onClick={next} className='slide-btn slide-btn2'>&#10095;</div>

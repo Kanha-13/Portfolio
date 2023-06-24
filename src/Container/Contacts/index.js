@@ -28,8 +28,8 @@ const Contacts = () => {
       <div id="app-screens-content-container" className="contacts-content" onClick={clickOnChild}>
         <button id="app-screen-close-btn" onClick={toHome}>X</button>
         <h2>CONTACTS</h2>
-        <p style={{ width: "100%", textAlign: "center", opacity: "0.85" }}>Let's build something great together!</p>
-        <p style={{ width: "100%", textAlign: "center", opacity: "0.85" }}>+91 83-1911-5373 | <a href='https://mail.google.com/mail/u/0/?fs=1&tf=cm&source=mailto&to=kanha.agr11@gmail.com' style={{textDecoration:"none",color:"inherit"}}>kanha.agr11@gmail.com</a> | Raipur (492001) India</p>
+        <p className='contacts-titles t1'>Let's build something great together!</p>
+        <p className='contacts-titles'>+91 83-1911-5373 | <a href='https://mail.google.com/mail/u/0/?fs=1&tf=cm&source=mailto&to=kanha.agr11@gmail.com' style={{ textDecoration: "none", color: "inherit" }}>kanha.agr11@gmail.com</a> | Raipur (492001) India</p>
         <Contact />
       </div>
     </div>

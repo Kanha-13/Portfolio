@@ -10,9 +10,10 @@ const Body = () => {
   }
   return (
     <div id='home-body'>
-      <h1>KANHA</h1>
-      <p>COMPUTER SCIENCE ENGINEER<br />FULL STACK | FRONTEND | BACKEND <br /> DATABASE | HYBRID MOBILE APP | DESKTOP APP </p>
-      <hr width="35%" />
+      <div id='body-titles'>
+        <h1>KANHA</h1>
+        <p>COMPUTER SCIENCE ENGINEER<br />FULL STACK | FRONTEND | BACKEND <br /> DATABASE | HYBRID MOBILE APP | DESKTOP APP </p>
+      </div>
       <div id='routes-div'>
         <Button label="ABOUT" onclick={() => onSwitch(ROUTES.ABOUT)} />
         <Button label="RESUME" onclick={() => onSwitch(ROUTES.RESUME)} />

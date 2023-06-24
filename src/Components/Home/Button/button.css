@@ -1,14 +1,31 @@
 .home-route-btn {
   display: block;
-  border-right: 1px solid #ffffff;
   padding: 0.9rem 2.5rem;
   letter-spacing: 0.2rem;
   font-size: 0.8rem;
   cursor: pointer;
+  text-align: center;
   opacity: 0.80;
+  border-right: 1px solid #ffffff;
   transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out;
 }
 
+.home-route-btn:last-child{
+  border-right: none;
+} 
+
 .home-route-btn:hover {
   background-color: #ffffff26;
+}
+
+@media screen and (max-width:800px) {
+
+.home-route-btn {
+  border-right: none;
+  border-bottom: solid 1px #ffffff;
+  padding: 0.9rem 0.5rem;
+}
+.home-route-btn:last-child{
+  border: none;
+} 
 }

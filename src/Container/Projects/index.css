@@ -21,3 +21,19 @@
   color: #ffffff;
   font-weight: 600;
 }
+
+@media screen and (max-width:800px) {
+  .projects-container {
+    overflow: auto;
+  }
+
+  .projects-content {
+    height: auto;
+    width: 90vw;
+    padding: 1em 2em;
+  }
+
+  .projects-content h2 {
+    font-size: 1em;
+  }
+}

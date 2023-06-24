@@ -5,7 +5,7 @@
 }
 
 .resume-content {
-  width: 80rem;
+  width: 80vw;
   flex-direction: row;
   justify-content: space-between;
 }
@@ -22,17 +22,39 @@
   font-weight: 600;
 }
 
-.resume-div-l1{
+.resume-div-l1 {
   display: flex;
   width: 30%;
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
 }
-.resume-div-l2{
+
+.resume-div-l2 {
   width: 100%;
 }
 
-.resume-content p,.resume-content h4{
+.resume-content p,
+.resume-content h4 {
   letter-spacing: 0.1rem;
+}
+
+@media screen and (max-width:800px) {
+  .resume-container {
+    overflow: auto;
+  }
+
+  .resume-content {
+    flex-direction: column;
+    height: auto;
+    width: 90vw;
+    padding: 1em 2em;
+  }
+
+  .resume-div-l1 {
+    width: 100%;
+  }
+  .resume-content h2 {
+    font-size: 1em;
+  }
 }

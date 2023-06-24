@@ -22,3 +22,35 @@
   color: #ffffff;
   font-weight: 600;
 }
+
+.contacts-titles{
+  /* width: "100%", textAlign: "center", opacity: "0.85" */
+  width: 100%;
+  text-align: center;
+  opacity: 0.85;
+  margin: 1vh;
+}
+
+.t1{
+  font-size: 1.3rem;
+  font-weight: 600;
+}
+
+@media screen and (max-width:800px) {
+  .contacts-container {
+    overflow: auto;
+  }
+
+  .contacts-content {
+    height: auto;
+    width: 90vw;
+    padding: 1em 2em;
+  }
+
+  .contacts-content p {
+    line-height: 1.5rem;
+  }
+  .contacts-content h2 {
+    font-size: 1em;
+  }
+}

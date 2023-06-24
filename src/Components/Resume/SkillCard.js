@@ -1,8 +1,10 @@
+import './skillcard.css'
+
 const SkillCard = ({ name, img, level }) => {
   return (
-    <div style={{ fontSize: "0.9rem", opacity: 0.85, marginBottom: "5px", display: "flex", width: "90%", alignItems: "center", justifyContent: "space-between" }}>
+    <div className="skill-card">
       {img ?
-        <div style={{ width: "4vw", height: "4vh", display: "flex", alignItems: "center", justifyContent: "center" }}>
+        <div className='skill-img-div'>
           <img style={{ height: "4vh" }} src={img} />
         </div>
         : <></>}

@@ -1,0 +1,13 @@
+.hobbies-div {
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
+  flex-wrap: wrap;
+}
+
+@media screen and (max-width:800px) {
+  .hobbies-div {
+    justify-content: center;
+    width: 100%;
+  }
+}

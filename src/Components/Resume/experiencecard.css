@@ -1,0 +1,76 @@
+.exp-card {
+  margin: 0.5vh 0px;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  width: 100%;
+}
+
+.card-link {
+  background-color: gray;
+  height: 2vh;
+  width: 3px;
+  margin-left: 0.5em;
+}
+
+.exp-ball {
+
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  border: 1px solid #ffffff;
+  opacity: 0.9;
+  width: 7vh;
+  height: 7vh;
+  border-radius: 50%;
+  justify-content: center;
+}
+
+.exp-duration {
+  font-size: 0.7em;
+  margin: 0px;
+  text-align: center;
+}
+
+.exp-comp {
+  margin: 0px;
+}
+
+.exp-role {
+  opacity: 0.85;
+  margin: 0.3rem 0px 0px 0px;
+}
+
+.exp-content {
+  margin-left: 1vw;
+}
+
+@media screen and (max-width:800px) {
+  .exp-ball {
+    min-width: 14vw;
+    min-height: 14vw;
+    max-width: 14vw;
+    max-height: 14vw;
+  }
+
+  .exp-card {
+    align-items: center;
+  }
+
+  .card-link {
+    margin-left: 6.5vw;
+    margin-bottom: 1vh;
+  }
+
+  .exp-content {
+    margin-left: 3vw;
+  }
+  .child2 h4 {
+    font-size: 0.9em;
+  }
+
+  .child2 p {
+    font-size: 0.8em;
+  }
+}

@@ -49,3 +49,19 @@
   color: rgb(236, 29, 29);
 
 }
+
+@media screen and (max-width:800px) {
+  .about-container {
+    overflow: auto;
+  }
+
+  .about-content {
+    height: auto;
+    width: 90vw;
+    padding: 1em 2em;
+  }
+
+  .about-content h2 {
+    font-size: 1em;
+  }
+}

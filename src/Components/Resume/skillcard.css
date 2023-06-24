@@ -1,0 +1,23 @@
+.skill-card {
+  font-size: 0.9rem;
+  opacity: 0.85;
+  margin-bottom: 5px;
+  display: flex;
+  width: 90%;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.skill-img-div {
+  width: 4vw;
+  height: 4vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@media screen and (max-width:800px) {
+  .skill-img-div {
+    width: 9vw;
+  }
+}

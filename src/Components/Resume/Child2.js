@@ -2,13 +2,13 @@ import ExperienceCard from "./ExperienceCard";
 
 const Child2 = () => {
   return (
-    <div className="resume-div-l1">
+    <div className="resume-div-l1 child2">
       <div className="resume-div-l2">
         <h2>EXPERIENCE</h2>
         <ExperienceCard company="Gyaanbee India" position="Junior Developer Intern" from="Oct 21" to="Jan 23" />
-        <div style={{ backgroundColor: "gray", height: "2vh", width: "3px", marginLeft: "1.7vw" }}></div>
+        <div className="card-link"></div>
         <ExperienceCard company="Svan Auto-Tech PVT LTD" position="Frontend Developer Intern" from="Aug 21" to="Dec 21" />
-        <div style={{ backgroundColor: "gray", height: "2vh", width: "3px", marginLeft: "1.7vw" }}></div>
+        <div className="card-link"></div>
         <ExperienceCard company="Marketing Advertising solutions" position="Junior Backend Intern" from="Oct 20" to="Feb 21" />
       </div>
       <div className="resume-div-l2">
