@@ -21,8 +21,10 @@ const App = () => {
   }, [])
   return (
     <BrowserRouter>
-      <div id="app-container">
-        <div id='app-filter'></div>
+      <div id="app-wrapper">
+        <div id="app-container">
+          <div id='app-filter'></div>
+        </div>
       </div>
       <Home />
       <Routes>
