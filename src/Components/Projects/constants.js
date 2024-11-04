@@ -8,13 +8,13 @@ export const PROJECTS = [
   {
     name: "Flexbench",
     source_code: "https://github.com/flexivian/flexbench/tree/develop",
-    live: "https://flexivian.github.io/flexbench/",
+    live: "https://flexivian.github.io/flexbench/docs/GSoC/2022/",
     info: `Flexbench is a powerful tool for generating simulated HTTP/HTTPS traffic. Built with NodeJS, it provides extensive customization options to tailor the traffic generation according to specific requirements. Whether used as a standalone script, a desktop application, or a server, Flexbench allows users to simulate traffic with fine-grained control. With features like read/write ratio configuration, duration settings, precise request generation control, and the ability to throttle inbound and outbound traffic, Flexbench enables users to mimic real-world scenarios and test the performance of their systems under different traffic loads. Its flexibility and customization options make it a valuable tool for traffic simulation and testing.`
   },
   {
-    name: "Pharmacy ERP Solution v1.0",
+    name: "Pharmacy ERP Solution",
     source_code: "https://github.com/Kanha-13/pharmacyERP_Solution",
-    live: "https://mypharmacy.glitch.me/",
+    live: "https://pharmatrack.vercel.app/login",
     info: `The pharmacy inventory management web application is a comprehensive solution built using Express (Node.js), React, and MongoDB. It empowers pharmacies with a range of features, including inventory management, sell-purchase history tracking, GST bill generation, bill history management, profit-loss analysis, party and company profile management, expiry alerts, and comprehensive transaction records. The upcoming version 2.0 is currently in development. Moreover, the software has been successfully deployed and is actively used for daily transactions in our own pharmacy, ensuring its reliability and practicality.`
   },
   {
