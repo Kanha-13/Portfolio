@@ -12,7 +12,7 @@ const Body = () => {
     <div id='home-body'>
       <div id='body-titles'>
         <h1>KANHA</h1>
-        <p>COMPUTER SCIENCE ENGINEER<br />FULL STACK | FRONTEND | BACKEND <br /> DATABASE | HYBRID MOBILE APP | DESKTOP APP </p>
+        <p>COMPUTER SCIENCE ENGINEER<br />FULL STACK | DOCKER | NODEJS | REACTJS <br /> HYBRID MOBILE APP | DESKTOP APP </p>
       </div>
       <div id='routes-div'>
         <Button label="ABOUT" onclick={() => onSwitch(ROUTES.ABOUT)} />

@@ -1,0 +1,22 @@
+.project-category-card {
+  transition: transform 0.1s none, box-shadow 0.1s none;
+}
+
+.project-category-card img {
+  opacity: 0.6;
+  position: absolute;
+  width: 100%;
+  align-self: center;
+  z-index: 0;
+  height: 100%;
+
+}
+
+.project-category-card:hover img {
+  opacity: 1;
+}
+
+.project-category-card:hover {
+  transform: scale(1.1);
+  box-shadow: 0 10px 20px rgba(122, 224, 255, 0.2);
+}

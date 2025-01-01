@@ -1,3 +1,10 @@
+import fullstackIcon from "../../Assets/images/fullstack.png"
+import mobileIcon from "../../Assets/images/mobile.webp"
+import desktopIcon from "../../Assets/images/desktop.png"
+import frontendIcon from "../../Assets/images/frontend.svg"
+import backendIcon from "../../Assets/images/backend.webp"
+import devopsIcon from "../../Assets/images/devops.png"
+
 export const PROJECTS = [
   {
     name: "Bookmy appointment",
@@ -29,4 +36,14 @@ export const PROJECTS = [
     live: "https://chuglikro.web.app/",
     info: "The messaging app, developed using React, Node.js, and MongoDB, prioritizes user privacy by not saving chat history. It offers real-time communication through secure and encrypted channels. Users can engage in one-on-one and exchange messages. With a user-friendly interface and robust backend, the app ensures smooth and seamless messaging experiences. While it prioritizes privacy by not storing chat history, it still offers essential features like message delivery notifications and online/offline status indicators to facilitate effective and instant communication between users."
   }
+]
+
+
+export const PROJECT_CATEGORIES = [
+  { title: "Full Stack", icon: fullstackIcon },
+  { title: "Mobile Apps", icon: mobileIcon },
+  { title: "Desktop Apps", icon: desktopIcon },
+  { title: "Frontend", icon: frontendIcon },
+  { title: "Backend", icon: backendIcon },
+  { title: "DevOps", icon: devopsIcon }
 ]
