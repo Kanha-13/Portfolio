@@ -5,6 +5,7 @@ import frontendIcon from "../../Assets/images/frontend.svg"
 import backendIcon from "../../Assets/images/backend.webp"
 import devopsIcon from "../../Assets/images/devops.png"
 
+import sosAppImg from "../../Assets/images/sosApp.webp"
 import logshotsImg from "../../Assets/images/logshots.png"
 import taskbuddyImg from "../../Assets/images/taskbuddy.png"
 import studentdashboardImg from "../../Assets/images/studentdashboard.png"
@@ -119,6 +120,14 @@ export const PROJECTS = [
     image: employeemanageImg,
     info: "My Employee Book is a powerful tool developed using React and Node.js. It streamlines HR processes by providing features like employee onboarding, and role management. With its intuitive interface and seamless integration, the app allows managers to efficiently handle employee information, monitor productivity, and generate insightful reports. It enhances collaboration, simplifies administrative tasks, and ensures effective workforce management, empowering businesses to optimize their human resources efficiently and drive organizational success.",
     category: "Frontend"
+  },
+  {
+    name: "SoS App",
+    source_code: "https://github.com/Kanha-13/WPowerFront",
+    live: "https://github.com/Kanha-13/WPowerFront",
+    image: sosAppImg,
+    info: "The SOS App is a life-saving mobile application built using React Native, designed to provide users with quick access to help during emergencies. It features GPS location sharing, allowing users to instantly share their real-time location with pre-selected contacts or emergency services. The app also includes a one-tap emergency calling feature, connecting users directly to local emergency numbers for immediate assistance. With its user-friendly interface and reliable functionality, the SOS App is an essential tool for ensuring safety and peace of mind in critical situations.",
+    category: "Mobile Apps"
   },
 
 
