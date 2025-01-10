@@ -17,6 +17,15 @@ const Projects = () => {
     navigate(ROUTES.HOME, { state: { isBack: true } })
   }
 
+  const handleBack = (event) => {
+    if (currentCategory)
+      setCategory(null)
+    else{
+      zoominbg()
+      navigate(ROUTES.HOME, { state: { isBack: true } })
+    }
+  }
+
   const clickOnChild = (event) => {
     event.stopPropagation()
   }
@@ -37,6 +46,7 @@ const Projects = () => {
     <div id="app-screens-containers" className="projects-container" onClick={toHome}>
       <div id="app-screens-content-container" className="projects-content" onClick={clickOnChild}>
         <button id="app-screen-close-btn" onClick={toHome}>X</button>
+        <div id="app-screen-back-btn" onClick={handleBack}>⬅</div>
         <h2>{currentCategory ? currentCategory : "PROJECTS"}</h2>
         {
           currentCategory ?
