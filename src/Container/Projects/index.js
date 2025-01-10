@@ -5,10 +5,12 @@ import { useNavigate } from "react-router-dom"
 import { ROUTES } from '../../Constants/routes'
 import SlideShow from '../../Components/Projects/SlideShow'
 import ProjectCategory from '../../Components/Projects/ProjectCategory'
+import { PROJECTS } from '../../Components/Projects/constants'
 
 const Projects = () => {
   const navigate = useNavigate()
   const [currentCategory, setCategory] = useState(null);
+  const [categorisedProjects, setCategorisedProjects] = useState([]);
 
   const toHome = (event) => {
     zoominbg()
@@ -19,8 +21,9 @@ const Projects = () => {
     event.stopPropagation()
   }
 
-  const handleOpenCat = (title) => {
-    setCategory(title)
+  const handleOpenCat = (category) => {
+    setCategory(category)
+    setCategorisedProjects(PROJECTS.filter((project) => project.category == category))
   }
 
 
@@ -37,7 +40,7 @@ const Projects = () => {
         <h2>{currentCategory ? currentCategory : "PROJECTS"}</h2>
         {
           currentCategory ?
-            <SlideShow /> :
+            <SlideShow projects={categorisedProjects} /> :
             <>
               <ProjectCategory onclick={handleOpenCat} />
             </>
