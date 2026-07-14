@@ -33,7 +33,7 @@ body {
   backdrop-filter: blur(1px);
   display: flex;
   flex-direction: column;
-  justify-content: end;
+  justify-content: flex-end;
   background-color: rgba(0, 0, 0, 0.608);
   width: 100vw;
   height: 100vh;
