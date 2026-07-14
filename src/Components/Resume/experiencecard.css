@@ -42,10 +42,6 @@
   margin: 0.3rem 0px 0px 0px;
 }
 
-.exp-content {
-  margin-left: 1vw;
-}
-
 @media screen and (max-width:800px) {
   .exp-ball {
     min-width: 14vw;

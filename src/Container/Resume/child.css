@@ -6,9 +6,17 @@
   .child3 p {
     font-size: 0.8em;
   }
-  
+
 }
 
-.resume-div-l2 h2{
+.services-div img {
+  filter: brightness(0) invert(1);
+  transition: transform 0.2s ease-in-out;
+}
+.services-div img:hover {
+  transform: scale(1.2)
+}
+
+.resume-div-l2 h2 {
   box-shadow: 0 10px 20px rgba(122, 224, 255, 0.2);
 }

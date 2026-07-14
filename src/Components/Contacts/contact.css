@@ -23,6 +23,11 @@
   /* border-radius: 50%; */
   /* opacity: 0.85; */
   height: 2.2vh;
+  transition: transform 0.2s ease-in-out;
+}
+
+#contact-routes img:hover {
+  transform: scale(1.25);
 }
 
 @media screen and (max-width:800px) {

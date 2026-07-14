@@ -5,6 +5,12 @@ import gaming from "../../Assets/images/game.png"
 import Contact from "../Contacts/Contact"
 import HobbyCard from "./HobbyCard"
 
+import webIcon from "../../Assets/images/web.png"
+import DekstopIcon from "../../Assets/images/desktopLogo.png"
+import MobileIcon from "../../Assets/images/mobile.png"
+import NodeIcon from "../../Assets/images/node.png"
+import FigmaIcon from "../../Assets/images/figma.png"
+
 import './hobby.css'
 
 const Child3 = () => {
@@ -12,7 +18,13 @@ const Child3 = () => {
     <div className="resume-div-l1 child3">
       <div className="resume-div-l2">
         <h2 >WHAT CAN I DO ?</h2>
-        <p style={{ lineHeight: "1.5rem", margin: "0px", opacity: "0.85" }}>Web Apps &#x2022; Mobile Apps &#x2022; Desktop Apps &#x2022; Figma Wireframes &#x2022; Node Scripting </p>
+        <div className="services-div" style={{ display: "flex" }}>
+          <HobbyCard title="Web Apps" img={webIcon} />
+          <HobbyCard title="Mobile Apps" img={MobileIcon} />
+          <HobbyCard title="Desktop Apps" img={DekstopIcon} />
+          <HobbyCard title="Node script" img={NodeIcon} />
+          <HobbyCard title="Figma frames" img={FigmaIcon} />
+        </div>
       </div>
       <div className="resume-div-l2">
         <h2 >HOBBIES </h2>

@@ -16,7 +16,8 @@
   letter-spacing: 0.5rem;
   border-bottom: 1px solid #ffffff;
   width: max-content;
-  padding-bottom: 0.5rem;
+  padding: 0.5rem 0px;
+  padding-left: 0.5rem;
   margin: 2rem 0 2rem 0;
   color: #ffffff;
   font-weight: 600;
@@ -37,6 +38,16 @@
 .resume-content p,
 .resume-content h4 {
   letter-spacing: 0.1rem;
+}
+
+#resume-download-btn {
+  text-decoration: none;
+  color: white;
+  display: flex;
+  align-items: center;
+  font-weight: 700;
+  position: absolute;
+  top: 15px;
 }
 
 @media screen and (max-width:800px) {

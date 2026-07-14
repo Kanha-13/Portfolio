@@ -4,7 +4,7 @@ const HobbyCard = ({ title, img, size = "3vh" }) => {
       <div style={{ flexDirection: "column", border: "1px solid #ffffff", display: "flex", alignItems: "center", justifyContent: "center", width: "5vh", height: "5vh", borderRadius: "50%" }}>
         <img alt={title || ""} style={{ height: size }} src={img} />
       </div>
-      <p style={{ opacity: "0.85" }}>{title}</p>
+      <p style={{ opacity: "0.85", textAlign:"center" }}>{title}</p>
     </div>
   );
 }

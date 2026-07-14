@@ -2,7 +2,15 @@
   display: flex;
   justify-content: space-between;
   width: 80%;
-  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.hobbies-div img {
+  transition: transform 0.2s ease-in-out;
+}
+.hobbies-div img:hover {
+  transform: scale(1.2);
+  color: blue;
 }
 
 @media screen and (max-width:800px) {
