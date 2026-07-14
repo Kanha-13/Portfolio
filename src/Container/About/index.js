@@ -33,7 +33,7 @@ const About = () => {
         <button id="app-screen-close-btn" onClick={toHome}>X</button>
         <h2>ABOUT</h2>
         <div id="my-img-container">
-          <img src={MyImg} />
+          <img alt="Kanha" src={MyImg} />
         </div>
         <p>
           Hello, my name is Kanha Agrawal.

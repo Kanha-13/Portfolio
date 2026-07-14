@@ -1,6 +1,9 @@
 .home-route-btn {
   display: block;
+  background-color: transparent;
+  color: #ffffff;
   padding: 0.9rem 2.5rem;
+  border: none;
   letter-spacing: 0.2rem;
   font-size: 0.8rem;
   cursor: pointer;

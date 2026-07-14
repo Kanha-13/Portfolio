@@ -12,7 +12,7 @@ const Home = (props) => {
   useEffect(() => {
     if (location.pathname === ROUTES.HOME)
       zoominbg()
-  }, [navigate])
+  }, [navigate, location])
   return (
     <div id='home-container'>
       <Body />

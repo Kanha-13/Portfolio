@@ -32,7 +32,7 @@ const Projects = () => {
 
   const handleOpenCat = (category) => {
     setCategory(category)
-    setCategorisedProjects(PROJECTS.filter((project) => project.category == category))
+    setCategorisedProjects(PROJECTS.filter((project) => project.category === category))
   }
 
 

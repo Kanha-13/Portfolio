@@ -5,7 +5,7 @@ const SkillCard = ({ name, img, level }) => {
     <div className="skill-card">
       {img ?
         <div className='skill-img-div'>
-          <img style={{ height: "4vh" }} src={img} />
+          <img alt={name || ""} style={{ height: "4vh" }} src={img} />
         </div>
         : <></>}
       <p style={{ margin: "0px", textAlign: "left", width: "30%" }}>{name}</p>
